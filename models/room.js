@@ -3,8 +3,7 @@ module.exports = (sequelize, DataTypes) => {
     roomName: {
       type: DataTypes.CHAR,
       allowNull: false
-    },
-    
+    }, 
   }, {
     timestamps: true,
     paranoid: true,
