@@ -16,7 +16,11 @@ module.exports = (sequelize, DataTypes) => {
     roomId: {
       type: DataTypes.INTEGER,
       allowNull: false
-    }
+    },
+    // userId: {
+    //   type: DataTypes.INTEGER,
+    //   allowNull: false
+    // }
   }, {
     timestamps: true,
     paranoid: true,
