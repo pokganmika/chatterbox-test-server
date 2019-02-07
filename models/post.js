@@ -13,10 +13,10 @@ module.exports = (sequelize, DataTypes) => {
     //   allowNull: true,
     //   defaultValue: sequelize.literal('now()')
     // },
-    // roomId: {
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false
-    // },
+    roomId: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
     // userId: {
     //   type: DataTypes.INTEGER,
     //   allowNull: true

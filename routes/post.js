@@ -9,10 +9,10 @@ router.get('/', async (req, res, next) => {
 })
 
 router.post('/', async (req, res, next) => {
-  const { userName, text/*, roomId, userId*/ } = req.body;
+  const { userName, text, roomId/*, userId*/ } = req.body;
   
   // const data = Post.findAll();
-  await Post.create({ userName, text/*, roomId, userId*/ })
+  await Post.create({ userName, text, roomId/*, userId*/ })
   // .then(() => res.status(200).send(data).json('작성 완료'))
   .then(() => res.status(200).json('작성 완료'))
     .catch((err) => {
