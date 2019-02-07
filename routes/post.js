@@ -3,7 +3,7 @@ const Post = require('../models/index').Post;
 const router = express.Router();
 
 router.get('/', async (req, res, next) => { 
-  const data = Post.findAll();
+  const data = await Post.findAll();
   res.send(data);
   // res.json('도와줘요 json');
 })
