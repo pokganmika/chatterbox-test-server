@@ -9,11 +9,11 @@ db.User = require("./user")(sequelize, Sequelize);
 db.Room = require("./room")(sequelize, Sequelize);
 db.Post = require("./post")(sequelize, Sequelize);
 
-db.User.hasMany(db.Post, { foreignKey: 'userId', sourceKey: 'id' });
-db.Post.belongsTo(db.User, { foreignKey: 'userId', targetKey: 'id' });
+// db.User.hasMany(db.Post, { foreignKey: 'userId', sourceKey: 'id' });
+// db.Post.belongsTo(db.User, { foreignKey: 'userId', targetKey: 'id' });
 
-db.Room.hasMany(db.Post, { foreignKey: 'roomId', sourceKey: 'id' });
-db.Post.belongsTo(db.Room, { foreignKey: 'roomId', targetKey: 'id' });
+// db.Room.hasMany(db.Post, { foreignKey: 'roomId', sourceKey: 'id' });
+// db.Post.belongsTo(db.Room, { foreignKey: 'roomId', targetKey: 'id' });
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;

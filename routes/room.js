@@ -2,7 +2,7 @@ const express = require('express');
 const Room = require('../models/index').Room;
 const router = express.Router();
 
-router.post('/room', async (req, res, next) => {
+router.post('/', async (req, res, next) => {
   const { roomName } = req.body;
   
   await Room.create({ roomName })
