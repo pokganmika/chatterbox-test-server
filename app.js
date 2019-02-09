@@ -19,10 +19,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/post', postRouter);
-app.use('/room', roomRouter);
+// app.use('/api', indexRouter);
+app.use('/api/users', usersRouter);
+app.use('/api/post', postRouter);
+app.use('/api/room', roomRouter);
 
 app.use('*', function (req, res) {
   res.sendFile(path.join(__dirname, './build/index.html'))
